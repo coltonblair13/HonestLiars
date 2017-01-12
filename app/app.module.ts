@@ -1,0 +1,39 @@
+import { NgModule }      from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppComponent } from './app.component';
+import { NavbarComponent} from './components/navbar/navbar.component';
+import { JumbotronComponent} from './components/jumbotron/jumbotron.component';
+import { HomeComponent} from './components/pages/home.component';
+import { AboutComponent} from './components/pages/about.component';
+import { RouterModule, Routes } from '@angular/router'
+
+
+
+// const appRoutes: Routes = [
+//   { path: '/', component: /pages/HomeComponent },
+//   { path: '/about', component: AboutComponent }
+//   // { path '**', component: PageNotFoundComponent }
+// ];
+
+@NgModule({
+  imports:      [
+                  BrowserModule,
+                  RouterModule.forRoot([
+                    {
+                      path: 'about',
+                      component: AboutComponent
+                    }
+                  ])
+                ],
+  declarations: [
+                  AppComponent,
+                  NavbarComponent,
+                  JumbotronComponent,
+                  HomeComponent,
+                  AboutComponent
+                ],
+  bootstrap:    [
+                  AppComponent
+                ]
+})
+export class AppModule { }
