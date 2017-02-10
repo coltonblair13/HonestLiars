@@ -22,6 +22,10 @@ import { RouterModule, Routes } from '@angular/router'
                     {
                       path: 'about',
                       component: AboutComponent
+                    },
+                    {
+                      path: 'home',
+                      component: HomeComponent
                     }
                   ])
                 ],

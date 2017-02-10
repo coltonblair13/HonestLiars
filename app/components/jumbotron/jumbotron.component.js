@@ -11,8 +11,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var JumbotronComponent = (function () {
     function JumbotronComponent() {
-        this.jumbotronHeading = 'This is a Heading';
-        this.jumbotronText = 'This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.';
+        this.jumbotronHeading = 'The Honest Liars';
+        this.jumbotronText = 'The Honest Liars is a sports podcast hosted by two brothers, Conner and Colton Blair, who have loved (and hated at times) sports since birth. Through no fault of their own they were born into a family that spent hours on end watching, analyzing, and arguing about sports. Follow along as they attempt to stay on point while discussing NBA, NFL, NCAA Football, NCAA Mens Basketball, Premier League Soccer, and much much more.';
         this.jumbotronButtonText = 'Read More';
         this.jumbotronButtonUrl = 'http://test.com';
     }

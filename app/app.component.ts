@@ -7,7 +7,7 @@ import { AboutComponent } from './components/pages/about.component';
 @Component({
   selector: 'my-app',
   template: `
-  <navbar></navbar>
+  <navbar><a routerLink="about">About</a></navbar>
   <jumbotron></jumbotron>
   <a routerLink="about">About</a>
   <router-outlet></router-outlet>

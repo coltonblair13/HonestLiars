@@ -32,6 +32,10 @@ var AppModule = (function () {
                     {
                         path: 'about',
                         component: about_component_1.AboutComponent
+                    },
+                    {
+                        path: 'home',
+                        component: home_component_1.HomeComponent
                     }
                 ])
             ],
