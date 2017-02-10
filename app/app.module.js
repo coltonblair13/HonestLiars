@@ -8,14 +8,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require("@angular/core");
-var platform_browser_1 = require("@angular/platform-browser");
-var app_component_1 = require("./app.component");
-var navbar_component_1 = require("./components/navbar/navbar.component");
-var jumbotron_component_1 = require("./components/jumbotron/jumbotron.component");
-var home_component_1 = require("./components/pages/home.component");
-var about_component_1 = require("./components/pages/about.component");
-var router_1 = require("@angular/router");
+var core_1 = require('@angular/core');
+var platform_browser_1 = require('@angular/platform-browser');
+var app_component_1 = require('./app.component');
+var navbar_component_1 = require('./components/navbar/navbar.component');
+var jumbotron_component_1 = require('./components/jumbotron/jumbotron.component');
+var home_component_1 = require('./components/pages/home.component');
+var about_component_1 = require('./components/pages/about.component');
+var router_1 = require('@angular/router');
 // const appRoutes: Routes = [
 //   { path: '/', component: /pages/HomeComponent },
 //   { path: '/about', component: AboutComponent }
@@ -24,31 +24,31 @@ var router_1 = require("@angular/router");
 var AppModule = (function () {
     function AppModule() {
     }
+    AppModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                platform_browser_1.BrowserModule,
+                router_1.RouterModule.forRoot([
+                    {
+                        path: 'about',
+                        component: about_component_1.AboutComponent
+                    }
+                ])
+            ],
+            declarations: [
+                app_component_1.AppComponent,
+                navbar_component_1.NavbarComponent,
+                jumbotron_component_1.JumbotronComponent,
+                home_component_1.HomeComponent,
+                about_component_1.AboutComponent
+            ],
+            bootstrap: [
+                app_component_1.AppComponent
+            ]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], AppModule);
     return AppModule;
 }());
-AppModule = __decorate([
-    core_1.NgModule({
-        imports: [
-            platform_browser_1.BrowserModule,
-            router_1.RouterModule.forRoot([
-                {
-                    path: 'about',
-                    component: about_component_1.AboutComponent
-                }
-            ])
-        ],
-        declarations: [
-            app_component_1.AppComponent,
-            navbar_component_1.NavbarComponent,
-            jumbotron_component_1.JumbotronComponent,
-            home_component_1.HomeComponent,
-            about_component_1.AboutComponent
-        ],
-        bootstrap: [
-            app_component_1.AppComponent
-        ]
-    }),
-    __metadata("design:paramtypes", [])
-], AppModule);
 exports.AppModule = AppModule;
 //# sourceMappingURL=app.module.js.map
